@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bhk-7x-Lmr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Compress-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Video Compress" id="BYZ-38-t0r" customClass="ViewController" customModule="VidCompress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp6-Ch-aXX">
+                                <rect key="frame" x="127" y="127" width="160.5" height="22"/>
+                                <state key="normal" title="  Take a Video     " image="video" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordVideoSelector:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U8q-7d-AM1"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="video" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1so-be-pQf">
+                                <rect key="frame" x="66" y="232" width="35" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWf-4h-aye">
+                                <rect key="frame" x="122.5" y="832" width="169" height="30"/>
+                                <state key="normal" title="Export Videos To Photos"/>
+                                <connections>
+                                    <action selector="ExportVideosSelector:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXs-Sm-S10"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-aZ-CZA">
+                                <rect key="frame" x="20" y="168" width="374" height="265"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ou-5d-2GN">
+                                        <rect key="frame" x="153.5" y="8" width="67" height="22"/>
+                                        <state key="normal" title=" Play " image="video.fill" catalog="system">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSelector:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jmk-ov-vi4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 KB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcB-CF-KfC">
+                                        <rect key="frame" x="168.5" y="38" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsV-FH-eIl">
+                                        <rect key="frame" x="90" y="67" width="194" height="22"/>
+                                        <state key="normal" title=" Play Medium Quality" image="video.fill" catalog="system">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSelector:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZy-dq-sPw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 KB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khk-lS-1j8">
+                                        <rect key="frame" x="168.5" y="97" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgW-W9-Jm9">
+                                        <rect key="frame" x="106.5" y="126" width="161" height="22"/>
+                                        <state key="normal" title=" Play Low Quality" image="video.fill" catalog="system">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSelector:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYB-6l-6r8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 KB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="av2-ve-1q8">
+                                        <rect key="frame" x="168.5" y="156" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="zsV-FH-eIl" firstAttribute="top" secondItem="FcB-CF-KfC" secondAttribute="bottom" constant="8" id="3aC-lR-uv1"/>
+                                    <constraint firstItem="khk-lS-1j8" firstAttribute="top" secondItem="zsV-FH-eIl" secondAttribute="bottom" constant="8" id="3lx-4b-xOK"/>
+                                    <constraint firstItem="FcB-CF-KfC" firstAttribute="centerX" secondItem="XMt-aZ-CZA" secondAttribute="centerX" id="7Wb-Mu-z5V"/>
+                                    <constraint firstItem="1Ou-5d-2GN" firstAttribute="top" secondItem="XMt-aZ-CZA" secondAttribute="top" constant="8" id="9TF-pd-zD3"/>
+                                    <constraint firstItem="khk-lS-1j8" firstAttribute="centerX" secondItem="XMt-aZ-CZA" secondAttribute="centerX" id="Hju-qC-EGr"/>
+                                    <constraint firstItem="av2-ve-1q8" firstAttribute="top" secondItem="EgW-W9-Jm9" secondAttribute="bottom" constant="8" id="Mbf-w2-KmQ"/>
+                                    <constraint firstItem="av2-ve-1q8" firstAttribute="centerX" secondItem="XMt-aZ-CZA" secondAttribute="centerX" id="d4X-zr-3be"/>
+                                    <constraint firstItem="EgW-W9-Jm9" firstAttribute="top" secondItem="khk-lS-1j8" secondAttribute="bottom" constant="8" id="fal-XH-oMS"/>
+                                    <constraint firstAttribute="height" constant="265" id="j5N-h1-gP9"/>
+                                    <constraint firstItem="zsV-FH-eIl" firstAttribute="centerX" secondItem="XMt-aZ-CZA" secondAttribute="centerX" id="n5c-Xp-bU9"/>
+                                    <constraint firstItem="EgW-W9-Jm9" firstAttribute="centerX" secondItem="XMt-aZ-CZA" secondAttribute="centerX" id="oF4-XK-yMu"/>
+                                    <constraint firstItem="1Ou-5d-2GN" firstAttribute="centerX" secondItem="XMt-aZ-CZA" secondAttribute="centerX" id="oiA-xI-byi"/>
+                                    <constraint firstItem="FcB-CF-KfC" firstAttribute="top" secondItem="1Ou-5d-2GN" secondAttribute="bottom" constant="8" id="stj-9E-6YM"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fhv-uJ-zHt">
+                                <rect key="frame" x="299" y="837" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gWf-4h-aye" secondAttribute="bottom" id="2Yq-1z-DmQ"/>
+                            <constraint firstItem="fhv-uJ-zHt" firstAttribute="leading" secondItem="gWf-4h-aye" secondAttribute="trailing" constant="7.5" id="4gi-zP-Xth"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fhv-uJ-zHt" secondAttribute="bottom" constant="5" id="SUZ-hX-XOt"/>
+                            <constraint firstItem="Xp6-Ch-aXX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="Y8G-uj-N7h"/>
+                            <constraint firstItem="XMt-aZ-CZA" firstAttribute="top" secondItem="Xp6-Ch-aXX" secondAttribute="bottom" constant="19" id="aiS-Lg-b6R"/>
+                            <constraint firstItem="XMt-aZ-CZA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fzw-L0-9nX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XMt-aZ-CZA" secondAttribute="trailing" constant="20" id="kjn-Yb-wmC"/>
+                            <constraint firstItem="Xp6-Ch-aXX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lap-rM-JeO"/>
+                            <constraint firstItem="gWf-4h-aye" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ySU-N3-e1f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video Compress" id="DMv-qs-4ju"/>
+                    <connections>
+                        <outlet property="exportActivityIndicator" destination="fhv-uJ-zHt" id="PnT-zC-1AI"/>
+                        <outlet property="exportButton" destination="gWf-4h-aye" id="jou-uv-LCX"/>
+                        <outlet property="playView" destination="XMt-aZ-CZA" id="ZWg-OW-3yE"/>
+                        <outlet property="videoLowQualityLabel" destination="av2-ve-1q8" id="e5H-PB-FkJ"/>
+                        <outlet property="videoMediumQualityLabel" destination="khk-lS-1j8" id="nND-wb-KTx"/>
+                        <outlet property="videoNormalQualityLabel" destination="FcB-CF-KfC" id="Hs3-KV-2pr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F7U-X0-N5R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bhk-7x-Lmr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F2h-Vw-HLj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9eG-pe-p6h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dm3-vW-6yX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="video" catalog="system" width="64" height="40"/>
+        <image name="video.fill" catalog="system" width="64" height="40"/>
+    </resources>
+</document>
